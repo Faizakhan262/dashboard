@@ -1,0 +1,27 @@
+.Cards {
+  display: flex;
+  flex-direction: row; /* Display cards in a row by default */
+  justify-content: space-evenly;
+  gap: 0.5rem; /* Add some space between the cards */
+  width: 100%;
+  margin-top: -2rem !important; /* Adjust margin to give space between heading and cards */
+}
+  .parentContainer{
+    width: 100%;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .Cards{
+      flex-direction: column;
+    }
+    .parentContainer{
+      height: 9rem;
+    }
+  }
+  
+  @media screen and (max-width: 768px)
+  {
+    .Cards{
+      width: 90%;
+    }
+  }

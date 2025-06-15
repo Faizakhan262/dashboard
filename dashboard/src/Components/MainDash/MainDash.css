@@ -1,0 +1,60 @@
+.MainDash {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items to the top by default */
+    align-items: center; /* Center items horizontally */
+    padding-top: 2rem; /* Give some spacing from the top */
+  }
+  
+  .MainDash h2 {
+    font-size: 1.7rem; /* Set a specific size for heading */
+    margin: 0; /* Remove default margin */
+    padding-bottom: 1rem; /* Some spacing between the heading and content */
+    z-index: 10; /* Keep the h2 above other elements, if needed */
+    text-align: center; /* Center the heading text */
+  }
+  
+  .Cards {
+    display: flex;
+    flex-direction: row; /* Display cards in a row by default */
+    justify-content: space-evenly;
+    gap: 1rem; /* Add some space between the cards */
+    width: 100%;
+    margin-top: 2rem; /* Adjust margin to give space between heading and cards */
+  }
+  
+  .Table {
+    margin-top: 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0.7rem;
+    overflow: hidden;
+    background-color: #ffffff;
+    width: 100%;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .MainDash {
+      justify-content: flex-start;
+    }
+  
+    .Cards {
+      flex-direction: column; /* Stack cards vertically on smaller screens */
+      align-items: center; /* Center the cards */
+      margin-top: 1rem; /* Adjust spacing */
+    }
+  
+    .Table {
+      margin-top: 1rem; /* Adjust spacing */
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .Cards {
+      width: 90%; /* Set card width to 90% on smaller screens */
+    }
+  
+    .MainDash {
+      align-items: center; /* Center items on mobile */
+    }
+  }
+  
